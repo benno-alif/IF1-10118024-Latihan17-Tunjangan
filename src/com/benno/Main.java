@@ -5,7 +5,7 @@ import java.util.Scanner;
         Nama        : Benno Alif Anggara
         Kelas       : IF1
         NIM         : 10118024
-        Deskripsi   : Menampilkan Biodata
+        Deskripsi   : Menghitung Tunjangan
      */
 
 public class Main {
@@ -33,14 +33,13 @@ public class Main {
     }
 
     public static double hitungTunjangan(double gaji, String status){
-        double tunjangan = 0;
+        double tunjangan;
         tunjangan = status.equals("Menikah") ? gaji*0.35 : 0;
         return tunjangan;
     }
 
     public static double hitungTotal(double gaji, double tunjangan){
-        double totalGaji = gaji + tunjangan;
-        return totalGaji;
+        return gaji + tunjangan;
     }
 
 }
